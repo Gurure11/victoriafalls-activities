@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Koketji Tsiri Books Online</title>
+	<meta name="description" content="Koketji Tsiri">
+	<meta name="keywords" content="what God can do only, what God can do when praises God up, christian books in vereening, christian books,">
+	<style type="text/css">
+		#a{
+			width: 300px;
+			border-radius: 5px;
+			margin-right: 30px;
+		}
+		#about{
+			margin-right: 20px;
+		}
+
+		#new{
+			margin-right: 20px;
+		}
+		button{
+			color: white;
+			background-color: blue;
+			border-radius: 5px;
+			padding: 2px;
+			border: none;
+		}
+		body{
+			align-items: center;
+			text-align: center;
+		}
+		button:hover{
+			color: yellowgreen;
+			background-color: red;
+			cursor: pointer;
+			transition: 0.18s;
+			opacity: 0.7;
+		}
+		#pay{
+			background-color: yellow;
+			color: blue;
+			border: none;
+			padding: 5px;
+		}
+		#pay:hover{
+			color: grey;
+			background-color: blue;
+			cursor: pointer;
+			transition: 0.18s;
+			opacity: 0.7;
+		}
+		#about:hover{
+			color: white;
+			background-color: blue;
+			transition: 0.18s;
+			opacity: 0.7;
+			cursor: pointer;
+		}
+		#new:hover{
+
+			color: white;
+			background-color: blue;
+			transition: 0.18s;
+			opacity: 0.7;
+			cursor: pointer;
+		}
+		#cont:hover{
+
+			color: white;
+			background-color: blue;
+			transition: 0.18s;
+			opacity: 0.7;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<h1>Koketji Tsiri Books Online</h1><br>
+	<br>
+	<hr><br>
+	<br>
+	<a id="about" href="details.html">About Us</a>
+	<a id="new" href="details.html">News Letter</a>
+	<a id="cont" href="contacts.html">Contacts</a>
+	<br>
+	<br>
+
+	<a href="images/a.jpg"><img id="a" src="images/a.jpg"></a>
+	<a href="images/b.jpg"><img id="a" src="images/b.jpg"></a>
+	<a href="images/c.jpg"><img id="a" src="images/c.jpg"></a>
+	<br>
+	<p>Praise and worship meant to glorify God, but eventually it brings healing and break through and it also benefits the listeners and observers of our<br> life styles. We see that in the life of Hanna, Genesis 29vs 31-35, David , 2 Samuel 12vs 19-23 and in the lives of Paul and Silas, Acts 16 vs 25-34. <br>Praise and worship in times of difficulties reveales how much God loves you, and it also tells problems how big God is. When God called Abraham He <br>promised him a land for his descendants, but immediately after the promise, the same land stricken by Great famine, but eventually God's promises was <br>fullfilled as his descendants possessed the same land. When Paul had thorn in the flesh, God didnt remove it but he said his grace is sufficient to you.<br> Eventually God's promises to you will come to pass as you keep praise and worship him. This awesome artistic book is to guide you to praise and <br>worship God forever. Do not lose hope, do not give up because God is still in control. Stand , stand stand you need to stand. Victory is on the way.<br> </p>
+	<br>
+	<div id="products">
+    <h2> E-Book</h2>
+    <div class="product">
+      <p>Book 1 - $10</p>
+      <button onclick="addToCart('Product 1', 10)">Add to Cart</button>
+    </div>
+    <div class="product">
+    	<br>
+    	<hr>
+    	<br>
+     
+  </div>
+
+  <div id="cart">
+    <h2>Cart</h2>
+    <ul id="cart-items">
+    </ul>
+    <p>Total: $<span id="cart-total">0</span></p>
+    <button onclick="viewCart()">View Cart</button>
+  </div>
+
+  <script>
+    let cart = [];
+
+    function addToCart(productName, price) {
+      cart.push({ name: productName, price: price });
+      updateCart();
+    }
+
+    function updateCart() {
+      let cartItems = document.getElementById('cart-items');
+      let cartTotal = document.getElementById('cart-total');
+      cartItems.innerHTML = '';
+      let total = 0;
+      cart.forEach(item => {
+        let li = document.createElement('li');
+        li.textContent = `${item.name} - $${item.price}`;
+        cartItems.appendChild(li);
+        total += item.price;
+      });
+      cartTotal.textContent = total;
+    }
+
+    function viewCart() {
+      alert("Cart items:\n" + cart.map(item => `${item.name} - $${item.price}`).join("\n"));
+    }
+  </script><br>
+
+  <a id="pay" href="">Proceed To Payment</a><br>
+  <br>
+  <br>
+  <strong>Our lives should Glorify God as:</strong><br>
+  <br>
+  <ul>
+  	<li>We live good lives among the unbelievers (1 Peter 2 v12)</li>
+  	<li>Practice Christianity unity (Romans 15 v5-6)</li>
+  	<li>We stay sexually pure (1 Corinthians 6 vs18-20)</li>
+  	<li>We use our spiritual Gifts to the best of our ability (1 Peter 4 vs11)</li>
+  </ul>
+  <br>
+  <br>
+</body>
+</html>
+
+</body>
