@@ -1,34 +1,223 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Translation Example</title>
+    <title>Activités de Vacances aux Chutes Victoria</title>
     <style>
-        .translate-container {
-            text-align: right;
-            margin: 10px;
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+        }
+        header a {
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        .main-content {
+            padding: 20px;
+            background: #ffffff;
+        }
+        .main-content h2 {
+            color: #35424a;
+        }
+        .activity-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .activity {
+            border: #e8491d 1px solid;
+            padding: 20px;
+            background: #fff;
+            text-align: center;
+        }
+        .activity img {
+            width: 100%;
+            height: auto;
+        }
+        .booking-form {
+            background: #fff;
+            padding: 20px;
+            border: #e8491d 1px solid;
+            margin-top: 20px;
+        }
+        .booking-form h2 {
+            color: #35424a;
+        }
+        .booking-form label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        .booking-form input, .booking-form select, .booking-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .booking-form button {
+            background: #e8491d;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        #whatsapp {
+            width: 30px;
+            border-radius: 10px;
+        }
+        #whatsapp:hover {
+            cursor: pointer;
+            opacity: 0.6;
+            transition: 0.18s;
         }
     </style>
 </head>
 <body>
-    <div class="translate-container">
-        <div id="google_translate_element"></div>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>Activités de Vacances aux Chutes Victoria</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#helicopter-ride">Vol en Hélicoptère</a></li>
+                    <li><a href="#safari-tour">Safari</a></li>
+                    <li><a href="#boat-cruise">Croisière en Bateau</a></li>
+                    <li><a href="#bungee-jumping">Saut à l'Élastique</a></li>
+                    <li><a href="#swimming">Baignade</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header><br>
+    <a href="https://api.whatsapp.com/send?phone=%2B263789330076&data=ARArWsDNitpWZheDda1cy78LTY1BSsjPn6c5_YJ492M1sTHf3qNvD9NDIKQxi_jQQN-PvMdjncOxTtlHWB-y1_5s_Igx-9PST05H4AMjusDB4CCMF_-stHU1mlAIxp1cleMGK6mV5_FgCKuf0aYLcvM4Vw&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR35dsDp1hRv3XR7CKfl_JQFM9sFJfqnGRnaL3AUPwHv1xIcT_6wOcCfSX0">
+        <img id="whatsapp" src="images/whats.jpeg" alt="WhatsApp"> WhatsApp
+    </a>
+    <br>
+
+    <div class="container">
+        <section class="main-content">
+            <div class="activity-grid">
+                <div id="helicopter-ride" class="activity">
+                    <h2>Vol en Hélicoptère</h2>
+                    <img src="images/heli.jpeg" alt="Vol en Hélicoptère">
+                    <p>Découvrez une vue imprenable sur les Chutes Victoria depuis les airs avec nos vols en hélicoptère. Une activité palpitante offrant une perspective unique sur la magnifique cascade et les paysages environnants.</p><br>
+                    <ul>
+                        <li>Vol en hélicoptère de 15 minutes</li>
+                        <li>Vol en hélicoptère de 25 minutes</li>
+                        <li>Hélicoptère, safari nocturne à Chobe, rafting en eau vive, canoë</li>
+                    </ul>
+                    <br>
+                </div>
+
+                <div id="safari-tour" class="activity">
+                    <h2>Safari</h2>
+                    <img src="images/tour.jpeg" alt="Safari">
+                    <p>Participez à nos safaris pour explorer la riche faune de la région. Observez des éléphants, des lions et de nombreux autres animaux dans leur habitat naturel. Parfait pour toute la famille pour profiter de la beauté de la faune africaine.</p><br>
+                    <ul>
+                        <li>Croisière au coucher du soleil de Batoka</li>
+                        <li>Visite guidée des chutes</li>
+                        <li>Safari de pêche</li>
+                        <li>Canoë sur le Zambèze supérieur</li>
+                        <li>Petit-déjeuner sur l'île L/S (Zambie)</li>
+                        <li>Déjeuner sur l'île L/S (Zambie)</li>
+                        <li>Thé sur l'île L/S (Zambie)</li>
+                    </ul>
+                </div>
+
+                <div id="boat-cruise" class="activity">
+                    <h2>Croisière en Bateau</h2>
+                    <img src="images/cruise.webp" alt="Croisière en Bateau">
+                    <p>Détendez-vous et profitez d'une croisière paisible sur le fleuve Zambèze. Admirez les paysages magnifiques et savourez un délicieux dîner à bord tout en naviguant à travers des paysages pittoresques.</p><br>
+                </div>
+
+                <div id="bungee-jumping" class="activity">
+                    <h2>Saut à l'Élastique</h2>
+                    <img src="images/bungee.jpeg" alt="Saut à l'Élastique">
+                    <p>Pour les amateurs de sensations fortes, le saut à l'élastique depuis le pont des Chutes Victoria est un incontournable ! Vivez une montée d'adrénaline en plongeant vers le fleuve Zambèze.</p><br>
+                </div>
+
+                <div id="swimming" class="activity">
+                    <h2>Baignade dans la Piscine du Diable</h2>
+                    <img src="images/devils.jpeg" alt="Piscine du Diable">
+                    <p>Plongez dans la Piscine du Diable, située au bord des Chutes Victoria. Cette piscine naturelle offre une expérience de baignade exaltante et sécurisée, avec la sensation d'être au bord de l'une des plus grandes cascades du monde.</p><br>
+                </div>
+            </div><br>
+            <h4>Activités à Sensations Fortes</h4><br>
+            <ul>
+                <li>Rafting en eau vive</li>
+                <li>Jet Boat</li>
+                <li>Balançoire géante</li>
+                <li>Balançoire géante en tandem</li>
+                <li>Tyrolienne</li>
+                <li>Flying Fox</li>
+                <li>Passage sur câble</li>
+                <li>Plongée en cage avec les crocodiles</li>
+            </ul>
+            <br>
+
+            <div class="booking-form">
+                <h2>Réservez Votre Activité</h2>
+                <form action="https://formsubmit.co/webster.malilani@gmail.com" method="POST">
+                    <label for="name">Nom Complet :</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Adresse Email :</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="activity">Choisissez une Activité :</label>
+                    <select id="activity" name="activity" required>
+                        <option value="helicopter-ride">Vol en Hélicoptère</option>
+                        <option value="safari-tour">Safari</option>
+                        <option value="boat-cruise">Croisière en Bateau</option>
+                        <option value="bungee-jumping">Saut à l'Élastique</option>
+                        <option value="swimming">Baignade dans la Piscine du Diable</option>
+                    </select>
+
+                    <label for="date">Date Préférée :</label>
+                    <input type="date" id="date" name="date" required>
+
+                    <label for="comments">Commentaires Supplémentaires :</label>
+                    <textarea id="comments" name="comments" rows="4"></textarea>
+
+                    <button type="submit">Soumettre</button>
+                </form>
+            </div>
+        </section>
     </div>
-
-    <h1>Welcome to My Website</h1>
-    <p>This is an example website to demonstrate translation using Google Translate.</p>
-
-    <!-- Google Translate script -->
-    <script type="text/javascript">
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement({
-                pageLanguage: 'en',
-                includedLanguages: 'ar,de,es,fr,it,ja,ko,zh-CN', // Add desired languages here
-                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-            }, 'google_translate_element');
-        }
-    </script>
-    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
+</html>
