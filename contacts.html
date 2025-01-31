@@ -1,121 +1,175 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-	<title>Koketji Tsiri Ebooks</title>
-	<style type="text/css">
-		#send{
-			background-color: blue;
-			color: white;
-			border: none;
-			border-radius: 2px;
-			cursor: pointer;
-		}
-		#send:hover{
-			color: green;
-			background-color: grey;
-			opacity: 0.6;
-			transition: 0.15s;
-			padding: 5px;
-		}
-		body{
-			align-items: center;
-			text-align: center;
-			color: white;
-			background-image: url(images/d.jpg);
-			background-size: cover;
-		}
-		a{
-			color: white;
-			margin-right: 15px;
-
-		}
-		a:hover{
-			color: red;
-			background-color: green;
-			cursor: pointer;
-		}
-		#subscribe{
-			color: white;
-			background-color: red;
-			border-radius: 2px;
-			padding: 5px;
-			border: none;
-		}
-	</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividades de Vacaciones en las Cataratas Victoria</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+        }
+        header a {
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        .main-content {
+            padding: 20px;
+            background: #ffffff;
+        }
+        .main-content h2 {
+            color: #35424a;
+        }
+        .activity-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .activity {
+            border: #e8491d 1px solid;
+            padding: 20px;
+            background: #fff;
+            text-align: center;
+        }
+        .activity img {
+            width: 100%;
+            height: auto;
+        }
+        .booking-form {
+            background: #fff;
+            padding: 20px;
+            border: #e8491d 1px solid;
+            margin-top: 20px;
+        }
+        .booking-form h2 {
+            color: #35424a;
+        }
+        .booking-form label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        .booking-form input, .booking-form select, .booking-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .booking-form button {
+            background: #e8491d;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        #whatsapp {
+            width: 30px;
+            border-radius: 10px;
+        }
+        #whatsapp:hover {
+            cursor: pointer;
+            opacity: 0.6;
+            transition: 0.18s;
+        }
+    </style>
 </head>
 <body>
-	<h2>Koketji Tsiri Books</h2><br>
-	<br>
-	<br>
-		<a href="index.html">Home Page</a>
-		<a href="auto.html">Auto Parts</a>
-		<a href="details.html">About Us</a><br>
-	<br>
-	<hr>
-	<form action="https://formsubmit.co/koketjitsiri@gmail.com" method="POST">
-			<div>
-			
-			<label>Name</label>
-			<input type="text" name="firstName" placeholder="Enter first name"><br>
-			<br>
-			<label>Surname</label>
-			<input type="text" name="lastName" placeholder="Enter Surname"><br>
-			<br>
-			<label>Contact Number</label>
-			<input type="phone" placeholder="cell no."><br><br>
-			<label>Email</label>	
-			<input type="email" name="Email" placeholder="Email Adress"><br>
-				<br>
-				<br>
-				<button type="submit" id="subscribe">Subscribe</button> <input type="radio" name="radio">
-				<br>
-				<label>Book Name</label>
-				<input type="text" placeholder="book name"name="book name">
-				<select>
-					<option value="what God can do">What God Can Do</option>
-					<option value="NKJV">NKJV</option>
-					<option value="news letter">News Letter</option>
-					
-					<option value="other">Other</option>
-				</select><br>
-				<br>
-				<label>Book Name</label>
-				<input type="book name" name="title" placeholder="title"><br>
-				<br>
-				<select>
-					<option value="hard copy">Hard Cover</option>
-					<option value="ebook">ebook</option>
-				</select>
-				<br>
-				<br>
-			<hr>
-			<label>Message</label>
-			<textarea type="text area" name="Message"></textarea><br>
-			<br>
-			<button id="send" input="submit">Submit</button><br>
-			<br>
-		</div><br>
-		
-	</form>
-	<br>
-	<br>
-	
-
-	<br>
-	<br>
-	Koketji Tsiri<br>
-	
-	
-	Vereeniging<br>
-	Cell: +27 82 638 6276<br>
-	<br>
-	<a href="https://goo.gl/maps/aXkqmhByAPauucrV6" target="_bank">Map Click Me</a>
-	<br>
-	<br>
-	Email: koketjitsiri@gmail.com<br>
-	<br>
-
-
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>Actividades de Vacaciones en las Cataratas Victoria</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#helicopter-ride">Vuelo en Helicóptero</a></li>
+                    <li><a href="#safari-tour">Safari</a></li>
+                    <li><a href="#boat-cruise">Crucero en Barco</a></li>
+                    <li><a href="#bungee-jumping">Bungee Jumping</a></li>
+                    <li><a href="#swimming">Natación</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header><br>
+    <a href="https://api.whatsapp.com/send?phone=%2B263789330076">
+        <img id="whatsapp" src="images/whats.jpeg" alt="WhatsApp"> WhatsApp
+    </a>
+    <br>
+    <div class="container">
+        <section class="main-content">
+            <div class="activity-grid">
+                <div id="helicopter-ride" class="activity">
+                    <h2>Vuelo en Helicóptero</h2>
+                    <img src="images/heli.jpeg" alt="Vuelo en Helicóptero">
+                    <p>Disfruta de una vista impresionante de las Cataratas Victoria desde el aire con nuestros vuelos en helicóptero. Una experiencia emocionante que ofrece una perspectiva única de la majestuosa cascada y el paisaje circundante.</p>
+                </div>
+                <div id="safari-tour" class="activity">
+                    <h2>Safari</h2>
+                    <img src="images/tour.jpeg" alt="Safari">
+                    <p>Únete a nuestros safaris para explorar la increíble fauna de la región. Observa elefantes, leones y otros animales en su hábitat natural. Una experiencia ideal para toda la familia.</p>
+                </div>
+                <div id="boat-cruise" class="activity">
+                    <h2>Crucero en Barco</h2>
+                    <img src="images/cruise.webp" alt="Crucero en Barco">
+                    <p>Relájate y disfruta de un tranquilo crucero por el río Zambeze. Admira paisajes impresionantes y saborea una deliciosa cena a bordo mientras navegas.</p>
+                </div>
+            </div><br>
+            <div class="booking-form">
+                <h2>Reserva tu Actividad</h2>
+                <form action="https://formsubmit.co/webster.malilani@gmail.com" method="POST">
+                    <label for="name">Nombre Completo:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="activity">Elige una Actividad:</label>
+                    <select id="activity" name="activity" required>
+                        <option value="helicopter-ride">Vuelo en Helicóptero</option>
+                        <option value="safari-tour">Safari</option>
+                        <option value="boat-cruise">Crucero en Barco</option>
+                        <option value="bungee-jumping">Bungee Jumping</option>
+                        <option value="swimming">Natación</option>
+                    </select>
+                    <label for="date">Fecha Preferida:</label>
+                    <input type="date" id="date" name="date" required>
+                    <label for="comments">Comentarios Adicionales:</label>
+                    <textarea id="comments" name="comments" rows="4"></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </div>
 </body>
 </html>
